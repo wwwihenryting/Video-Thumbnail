@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Take-Home Test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+	<h1>Take-Home Test</h1>
+
+	<figure id="videoContainer" data-fullscreen="false">
+		<video id="video" controls preload="metadata" poster="img/poster.jpg">
+			<source src="src/test.mp4" type="video/mp4">
+			<source src="src/test.ogg" type="video/ogg">
+		</video>
+		<div id="video-controls" class="controls" data-state="hidden">
+			<button id="playpause" type="button" data-state="play">Play/Pause</button>
+			<div class="progress" id="progressContainer">
+				<progress id="progress" value="0" min="0">
+					<span id="progress-bar"></span>
+				</progress>
+				<span id="timer"></span>
+			</div>
+			<button id="mute" type="button" data-state="mute">Mute/Unmute</button>
+			<button id="fs" type="button" data-state="go-fullscreen">Fullscreen</button>
+		</div>
+	</figure>
+	<script src="js/video-player.js"></script>
+</body>
+</html>
